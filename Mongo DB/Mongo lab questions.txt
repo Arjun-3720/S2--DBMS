@@ -1,0 +1,42 @@
+Mongo lab questions
+
+1)Insert 10 records
+
+2)Retrieve all values with age greater than 20
+
+3)Find values
+db.<collectionname>.find()
+db.<collectionname>.find().pretty()
+
+3)Retrieve all values with age less than 20
+
+4)Find a student whose name is varna
+
+5) Update a student ayisha to ayisha mumthas M
+
+db.<collectionname>.update({"Name":"Ayisha"},{$set:{"Name":"Ayisha Mumthaz M"})
+
+6)Remove a student whose name is hilal
+
+db.<collectionname>.remove({"Name":"Hilal"})
+
+7) Display all students whose name starts with 'A'
+
+db.<collectionname>.insertMany([{"Name":"Avinash","Age":19},{"Name":"Sreerag","Age":25},{"Name":"Akash":"Age":22}])
+
+8)display all students in ascending order
+
+ db.coll.find().sort({Name:1})
+
+9) Find letter "A" in between name
+
+10) display all students in descending order
+
+11) find total no of students in the collection
+  db.<collectionname>.count()
+
+12) display all students in distinct order
+
+13) display age in distinct order
+
+14) retrive all values whose age is >= 18 (gte)
